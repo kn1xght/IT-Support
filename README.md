@@ -37,8 +37,8 @@ Hands-on IT Support and Cybersecurity labs built to simulate enterprise environm
 
 ## 🎯 Goals
 
-- Develop practical IT support and cybersecurity skills
-- Improve troubleshooting and problem-solving capabilities
+- Develop practical enterprise IT support skills
+- Strengthen troubleshooting and problem-solving abilities
 - Reinforce theoretical knowledge through hands-on labs
 - Practice writing clear and structured technical documentation
 
