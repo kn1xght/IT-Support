@@ -7,7 +7,7 @@ Hands-on labs built to simulate enterprise IT environments using Windows and Lin
 | Project | Description |
 |:--|:--|
 | [Windows](Windows) | Windows 11 VM, user accounts, snapshots, file permissions, Event Viewer, and system tools |
-| [Linux](Linux) | Ubuntu VM, user accounts, snapshots, file permissions, Event Viewer, and system tools |
+| [Linux](Linux) | Ubuntu VM, user levels and sudo, terminal, file permissions, bash scripting, package management |
 | [Windows Server](Windows-Server) | Server roles, DHCP, DNS, file services |
 | [Active Directory](Active-Directory) | Domain setup, users and groups, OUs, GPOs, DNS, access permissions |
 | [Entra ID](Entra-ID) | Cloud identity configuration, user management, MFA, Conditional Access |
