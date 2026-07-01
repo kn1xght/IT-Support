@@ -6,25 +6,29 @@ Hands-on labs built to simulate enterprise IT environments using Virtualization,
 
 | Project | Description |
 |:--|:--|
-| [Virtualization](Virtualization) | Windows/Linux VMs, snapshots, networking, shared folders |
-| [Active Directory](Active-Directory) | Domain setup, users/groups, GPOs, DNS, shared folders |
+| [Windows](Windows) | Windows 11 VM, user accounts, snapshots, file permissions, Event Viewer, and system tools |
+| [Linux](Linux) | Ubuntu VM, user accounts, snapshots, file permissions, Event Viewer, and system tools |
 | [Windows Server](Windows-Server) | Server roles, DHCP, DNS, file services |
-| [Confluence](Confluence) | Internal documentation, SOPs, troubleshooting guides, and knowledge base articles |
-| [ServiceNow](ServiceNow) | Incident management, service requests, and ticket workflows following ITIL practices |
+| [Active Directory](Active-Directory) | Domain setup, users and groups, OUs, GPOs, DNS, access permissions |
 | [Entra ID](Entra-ID) | Cloud identity configuration, user management, MFA, Conditional Access |
+| [ServiceNow](ServiceNow) | Incident management, service requests, and ticket workflows following ITIL practices |
 | [Jira](Jira) | Ticketing workflows and IT support scenarios |
+| [Confluence](Confluence) | Internal documentation, SOPs, troubleshooting guides, and knowledge base articles |
+
 
 ## 🚀 Progress
 
 | Project | Status |
 |----------|--------|
-| Virtualization | 🟢 Complete |
-| Active Directory | 🟡 In Progress |
+| Windows | 🟢 Complete |
+| Linux | 🟢 Complete |
 | Windows Server | 🟡 In Progress |
-| Ticket Simulation | ⚪ Planned |
-| Confluence | ⚪ Planned |
-| ServiceNow | ⚪ Planned |
+| Active Directory | 🟡 In Progress |
 | EntraID | ⚪ Planned |
+| ServiceNow| ⚪ Planned |
+| Jira | ⚪ Planned |
+| Confluence | ⚪ Planned |
+
 | Jira | ⚪ Planned |
 
 ## 🎯 Goals
