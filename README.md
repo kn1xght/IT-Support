@@ -1,6 +1,6 @@
 # 🖥️ IT Support Portfolio
 
-Hands-on labs built to simulate enterprise environments using Virtualization, Windows Server, Active Directory, Microsoft Entra ID, and common helpdesk tools. Each lab includes documentation, screenshots, troubleshooting notes, and lessons learned.
+Hands-on labs built to simulate enterprise IT environments using Virtualization, Windows Server, Active Directory, Microsoft Entra ID, and common helpdesk tools. Each lab includes configuration and troubleshooting notes, screenshots, and lessons learned.
 
 ## 📂 Labs
 
