@@ -29,8 +29,6 @@ Hands-on labs built to simulate enterprise IT environments using Virtualization,
 | Jira | ⚪ Planned |
 | Confluence | ⚪ Planned |
 
-| Jira | ⚪ Planned |
-
 ## 🎯 Goals
 
 - Develop practical enterprise IT support skills
