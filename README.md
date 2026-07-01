@@ -8,10 +8,10 @@ Hands-on labs built to simulate enterprise IT environments using Windows and Lin
 |:--|:--|
 | [Windows](Windows) | Windows 11 VM, user accounts, snapshots, file permissions, Event Viewer, system tools |
 | [Linux](Linux) | Ubuntu VM, terminal, users and sudo, file permissions, Bash scripting, package management |
-| [Windows Server](Windows-Server) | Server 2022 VM, Server roles, DHCP, DNS, file services |
+| [Windows Server](Windows-Server) | Server 2022 VM, server roles, DHCP, DNS, file services |
 | [Active Directory](Active-Directory) | Domain controller setup, users and groups, OUs, GPOs, password resets, PowerShell |
 | [Entra ID](Entra-ID) | Cloud identity configuration, user management, MFA, Conditional Access |
-| [ServiceNow](ServiceNow) | Incident management, service requests, and ticket workflows following ITIL practices |
+| [ServiceNow](ServiceNow) | Incident management, service requests, ITIL-based ticket workflows |
 | [Jira](Jira) | Ticketing workflows and IT support scenarios |
 | [Confluence](Confluence) | Internal documentation, SOPs, troubleshooting guides, and knowledge base articles |
 
