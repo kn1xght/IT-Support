@@ -12,7 +12,7 @@ Hands-on labs built to simulate enterprise environments using Virtualization, Wi
 | [Ticket Simulation](Ticket-Simulation) | Helpdesk ticket simulation, workflow troubleshooting, and user support scenarios |
 | [Confluence](Confluence) | Internal documentation, SOPs, troubleshooting guides, and knowledge base articles |
 | [ServiceNow](ServiceNow) | Incident management, service requests, and ticket workflows following ITIL practices |
-| [Entra-ID](Entra-ID) | Cloud identity configuration, user management, MFA, Conditional Access |
+| [Entra ID](Entra-ID) | Cloud identity configuration, user management, MFA, Conditional Access |
 | [Jira](Jira) | Ticketing workflows and IT support scenarios |
 
 ## 🚀 Progress
@@ -25,7 +25,7 @@ Hands-on labs built to simulate enterprise environments using Virtualization, Wi
 | Ticket Simulation | ⚪ Planned |
 | Confluence | ⚪ Planned |
 | ServiceNow | ⚪ Planned |
-| Entra-ID | ⚪ Planned |
+| EntraID | ⚪ Planned |
 | Jira | ⚪ Planned |
 
 ## 🎯 Goals
