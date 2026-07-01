@@ -2,8 +2,6 @@
 
 Hands-on labs built to simulate enterprise environments using Virtualization, Windows Server, Active Directory, Microsoft Entra ID, and common helpdesk tools. Each lab includes documentation, screenshots, troubleshooting notes, and lessons learned.
 
----
-
 ## 📂 Labs
 
 | Project | Description |
@@ -16,8 +14,6 @@ Hands-on labs built to simulate enterprise environments using Virtualization, Wi
 | [ServiceNow](ServiceNow) | Incident management, service requests, and ticket workflows following ITIL practices |
 | [Entra-ID](Entra-ID) | Cloud identity configuration, user management, MFA, Conditional Access |
 | [Jira](Jira) | Ticketing workflows and IT support scenarios |
-
----
 
 ## 🚀 Progress
 
@@ -32,17 +28,12 @@ Hands-on labs built to simulate enterprise environments using Virtualization, Wi
 | Entra-ID | ⚪ Planned |
 | Jira | ⚪ Planned |
 
-
----
-
 ## 🎯 Goals
 
 - Develop practical enterprise IT support skills
 - Strengthen troubleshooting and problem-solving abilities
 - Reinforce theoretical knowledge through hands-on labs
 - Practice writing clear and structured technical documentation
-
----
 
 ## 💬 Message to Readers
 Feedback and constructive criticism are always welcome as I continue improving and expanding this portfolio.
