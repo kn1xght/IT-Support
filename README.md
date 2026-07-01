@@ -24,7 +24,7 @@ Hands-on labs built to simulate enterprise IT environments using Virtualization,
 | Linux | 🟢 Complete |
 | Windows Server | 🟡 In Progress |
 | Active Directory | 🟡 In Progress |
-| EntraID | ⚪ Planned |
+| Entra ID | ⚪ Planned |
 | ServiceNow| ⚪ Planned |
 | Jira | ⚪ Planned |
 | Confluence | ⚪ Planned |
