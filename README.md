@@ -7,9 +7,9 @@ Hands-on labs built to simulate enterprise environments using Virtualization, Wi
 | Project | Description |
 |:--|:--|
 | [Virtualization](Virtualization) | Windows/Linux VMs, snapshots, networking, shared folders |
-| [Active&#8209;Directory](Active-Directory) | Domain setup, users/groups, GPOs, DNS, shared folders |
-| [Windows&#8209;Server](Windows-Server) | Server roles, DHCP, DNS, file services |
-| [Ticket&#8209;Simulation](Ticket-Simulation) | Helpdesk ticket simulation, workflow troubleshooting, and user support scenarios |
+| [Active&#8209;Directory](Active Directory) | Domain setup, users/groups, GPOs, DNS, shared folders |
+| [Windows&#8209;Server](Windows Server) | Server roles, DHCP, DNS, file services |
+| [Ticket&#8209;Simulation](Ticket Simulation) | Helpdesk ticket simulation, workflow troubleshooting, and user support scenarios |
 | [Confluence](Confluence) | Internal documentation, SOPs, troubleshooting guides, and knowledge base articles |
 | [ServiceNow](ServiceNow) | Incident management, service requests, and ticket workflows following ITIL practices |
 | [Entra-ID](Entra-ID) | Cloud identity configuration, user management, MFA, Conditional Access |
