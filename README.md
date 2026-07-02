@@ -34,7 +34,7 @@ Hands-on labs built to simulate enterprise IT environments using Windows and Lin
 - Develop practical enterprise IT support skills
 - Strengthen troubleshooting and problem-solving abilities
 - Build familiarity with common IT support tools and workflows
-- Practice writing clear and structured technical documentation
+- Practice writing clear, structured technical documentation
 
 ## 💬 Message to Readers
 Feedback and constructive criticism are always welcome as I continue improving and expanding this portfolio.
