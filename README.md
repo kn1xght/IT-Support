@@ -13,7 +13,7 @@ Hands-on labs built to simulate enterprise IT environments using Windows and Lin
 | [Entra ID](Entra-ID/README.md) | Cloud identity configuration, user management, MFA, Conditional Access |
 | [ServiceNow](ServiceNow/README.md) | Incident management, service requests, ITIL-based ticket workflows |
 | [Jira](Jira/README.md)| Ticketing workflows and IT support scenarios |
-| [Confluence](Confluence/README.md) Internal documentation, SOPs, troubleshooting guides, and knowledge base articles |
+| [Confluence](Confluence/README.md) | Internal documentation, SOPs, troubleshooting guides, and knowledge base articles |
 
 
 ## 🚀 Progress
