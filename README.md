@@ -6,7 +6,7 @@ Hands-on labs built to simulate enterprise IT environments using Windows and Lin
 
 | Project | Description |
 |:--|:--|
-| [Windows](Windows) | Windows 11 VM, user accounts, snapshots, file permissions, Event Viewer, system tools |
+| [Windows](Windows/README.md) | Windows 11 VM, user accounts, snapshots, file permissions, Event Viewer, system tools |
 | [Linux](Linux) | Ubuntu VM, terminal, users and sudo, file permissions, Bash scripting, package management |
 | [Windows Server](Windows-Server) | Server 2022 VM, server roles, DHCP, DNS, file services |
 | [Active Directory](Active-Directory) | Domain controller setup, users and groups, OUs, GPOs, password resets, PowerShell |
