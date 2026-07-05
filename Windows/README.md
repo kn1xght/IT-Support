@@ -1,7 +1,11 @@
-# Windows Labs
+# WINDOWS LABS
+
+---
 
 Hands-on labs covering Windows 11 VM environment setup, creating & restoring snapshots, account 
 administration, installing and uninstalling software, file permissions, windows updates and system diagnostics.
+
+---
 
 | Lab | Description | Skills Demonstrated |
 |---|---|---|
