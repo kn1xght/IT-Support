@@ -2,7 +2,6 @@
 
 Hands-on labs covering Windows 11 VM environment setup, creating & restoring snapshots, account 
 administration, installing and uninstalling software, file permissions, windows updates and system diagnostics.
-
 | Lab | Description | Skills Demonstrated |
 |---|---|---|
 | [VM Setup & Snapshots](01-win11-vm-setup-snapshots/) | Built a Windows 11 VM and established/tested a baseline snapshot | VM provisioning, snapshot management |
