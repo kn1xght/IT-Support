@@ -31,7 +31,7 @@ A Windows 11 virtual machine was required as a controlled environment for future
 
 I created a new Windows 11 virtual machine in VMware Workstation Pro and selected the custom configuration option. This allowed me to manually configure the virtual hardware, firmware, storage, and network settings instead of relying on the default setup.
 
-![Custom virtual machine configuration](images/01-custom-vm-configuration.png)
+![Custom virtual machine configuration](images/01-windows-11-vm-installation.png)
 
 The VM was configured with UEFI firmware and Secure Boot enabled to meet Windows 11 requirements.
 
