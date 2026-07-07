@@ -35,11 +35,11 @@ I created a new Windows 11 virtual machine in VMware Workstation Pro and selecte
 
 The VM was configured with UEFI firmware and Secure Boot enabled to meet Windows 11 requirements.
 
-![UEFI and Secure Boot configuration](images/02-uefi-secure-boot.png)
+![UEFI and Secure Boot configuration](screenshots/02-vm-boot-configuration.png)
 
 Because Windows 11 requires TPM support, I configured virtual machine encryption so VMware could enable a virtual TPM device.
 
-![Virtual TPM and encryption configuration](images/03-virtual-tpm-encryption.png)
+![Virtual TPM and encryption configuration](screenshots/03-tpm-configuration.png)
 
 ### 2. Configured virtual hardware resources
 
@@ -47,11 +47,11 @@ The VM was assigned enough resources to run Windows 11 smoothly while still leav
 
 The system was configured with 16 GB of RAM for better performance during installation and later lab work.
 
-![Memory configuration](images/04-memory-configuration.png)
+![Memory configuration](screenshots/04-memory-configuration.png)
 
 NAT networking was selected so the virtual machine could access the internet through the host computer without being directly exposed to the physical network.
 
-![NAT network configuration](images/05-network-nat.png)
+![NAT network configuration](screenshots/05-network-type-configuration.png)
 
 ### 3. Installed Windows 11
 
@@ -59,7 +59,7 @@ I started the VM and booted from the Windows 11 ISO. During installation, Disk 0
 
 The disk was left as unallocated space so Windows Setup could automatically create the required system, recovery, and primary partitions.
 
-![Windows 11 disk selection](images/06-disk-selection.png)
+![Windows 11 disk selection](screenshots/06-disk-allocation.png)
 
 ### 4. Created a local Windows account
 
@@ -67,7 +67,7 @@ During the Windows 11 out-of-box experience, the setup process required a Micros
 
 This kept the lab system separate from personal cloud services and made the VM easier to reset, snapshot, and reuse.
 
-![Local account setup command](images/07-local-account-command.png)
+![Local account setup command](screenshots/07-local-user-account-configuration.png)
 
 ### 5. Installed VMware Tools
 
@@ -75,7 +75,7 @@ After Windows 11 was installed, I installed VMware Tools inside the guest operat
 
 VMware Tools improves display scaling, mouse movement, clipboard behavior, and general integration between the host and guest systems.
 
-![VMware Tools installation completed](images/08-vmware-tools-installed.png)
+![VMware Tools installation completed](screenshots/08-vmware-tools-installation.png)
 
 ### 6. Created a baseline snapshot
 
@@ -83,15 +83,15 @@ Once the VM was fully installed and operating correctly, I created a baseline sn
 
 This snapshot provides a known working state that can be restored before starting future labs or after making unwanted configuration changes.
 
-![Baseline snapshot created](images/09-baseline-snapshot.png)
+![Baseline snapshot created](screenshots/09-snapshot-manager.png)
 
 ### 7. Tested snapshot restoration
 
 To verify the snapshot, I made a temporary change inside the VM by creating a test folder named `DELETE ME`.
 
-I then restored the VM back to the baseline snapshot. After restoration, I confirmed that the temporary change had been removed and that the VM returned to its clean working state.
+I then restored the VM back to the baseline snapshot. After restoration, I confirmed that the "DELETE ME" folder had been removed and that the VM returned to its clean working state.
 
-![Virtual machine restored to baseline snapshot](images/10-snapshot-restored.png)
+![Testing snapshot functionality](screenshots/10-snapshot-test.jpg)
 
 ## Configuration Notes
 
