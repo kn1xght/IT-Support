@@ -89,9 +89,11 @@ This snapshot provides a known working state that can be restored before startin
 
 To verify the snapshot, I made a temporary change inside the VM by creating a test folder named `DELETE ME`.
 
+![Testing snapshot functionality](screenshots/10-snapshot-test.jpg)
+
 I then restored the VM back to the baseline snapshot. After restoration, I confirmed that the "DELETE ME" folder had been removed and that the VM returned to its clean working state.
 
-![Testing snapshot functionality](screenshots/10-snapshot-test.jpg)
+![Successful snapshot restoration](screenshots/12-successful-snapshot-restoration.jpg)
 
 ## Configuration Notes
 
