@@ -8,22 +8,16 @@ A Windows 11 virtual machine was required as a controlled environment for future
 
 - **Guest operating system:** Windows 11 Enterprise Evaluation
 - **Hypervisor:** VMware Workstation Pro 26H1
-- **Network configuration:** NAT
 - **Installation media:** Windows 11 ISO
 - **Host operating system:** Windows 10
-- **Firmware:** UEFI with Secure Boot
-- **Virtual TPM:** Enabled through VM encryption
 
 ## Skills Demonstrated
 
-- Virtual machine setup
-- Windows 11 installation
-- Virtual hardware configuration
-- UEFI, Secure Boot, and TPM configuration
+- Windows 11 VM setup
+- VM hardware configuration
 - Local Windows account setup
 - VMware Tools installation
-- Snapshot creation and restoration
-- System verification
+- Snapshot management
 
 ## Implementation
 
@@ -95,13 +89,13 @@ I then restored the VM back to the baseline snapshot. After restoration, I confi
 
 ![Successful snapshot restoration](screenshots/12-successful-snapshot-restoration.jpg)
 
-## Configuration Notes
+## VM Configuration
 
 - **Memory:** 16 GB
 - **Processors:** 1 processor, 4 cores
-- **Storage:** 64 GB virtual disk
+- **Storage:** 100 GB virtual disk
 - **Disk type:** NVMe
-- **Network mode:** NAT
+- **Network type:** NAT
 - **Firmware:** UEFI with Secure Boot
 - **Virtual TPM:** Enabled
 - **Snapshot name:** `Fresh Windows 11 install`
@@ -110,7 +104,7 @@ These settings were selected to provide a smooth Windows 11 lab environment whil
 
 ## Result
 
-The Windows 11 virtual machine was successfully deployed in VMware Workstation Pro and prepared for future IT support and cybersecurity labs.
+The Windows 11 virtual machine was successfully deployed in VMware Workstation Pro and prepared for future enterprise IT labs. 
 
 The VM was configured with Windows 11-compatible firmware, virtual TPM support, NAT networking, VMware Tools, and a clean baseline snapshot. Snapshot functionality was verified by restoring the VM after making a temporary change.
 
