@@ -11,6 +11,19 @@ A Windows 11 virtual machine was required as a controlled environment for future
 - **Installation media:** Windows 11 ISO
 - **Host operating system:** Windows 10
 
+## VM Configuration
+
+- **Memory:** 16 GB
+- **Processors:** 1 processor, 4 cores
+- **Storage:** 100 GB virtual disk
+- **Disk type:** NVMe
+- **Network type:** NAT
+- **Firmware:** UEFI with Secure Boot
+- **Virtual TPM:** Enabled
+- **Snapshot name:** `Fresh Windows 11 install`
+
+These settings were chosen to provide a stable Windows 11 lab environment while keeping the VM separate, recoverable, and reusable.
+
 ## Skills Demonstrated
 
 - Windows 11 VM setup
@@ -89,19 +102,6 @@ I then restored the VM back to the baseline snapshot. After restoration, I confi
 
 ![Successful snapshot restoration](screenshots/12-successful-snapshot-restoration.jpg)
 
-## VM Configuration
-
-- **Memory:** 16 GB
-- **Processors:** 1 processor, 4 cores
-- **Storage:** 100 GB virtual disk
-- **Disk type:** NVMe
-- **Network type:** NAT
-- **Firmware:** UEFI with Secure Boot
-- **Virtual TPM:** Enabled
-- **Snapshot name:** `Fresh Windows 11 install`
-
-These settings were selected to provide a smooth Windows 11 lab environment while keeping the VM isolated and reusable.
-
 ## Result
 
 The Windows 11 virtual machine was successfully deployed in VMware Workstation Pro and prepared for future enterprise IT labs. 
@@ -119,4 +119,4 @@ The VM was configured with Windows 11-compatible firmware, virtual TPM support, 
 ```cmd
 start ms-cxh:localonly
 
-[← Back to Windows Labs](../README.md)
+[← Back to Windows](../README.md)
