@@ -118,5 +118,6 @@ The VM was configured with Windows 11-compatible firmware, virtual TPM support, 
 
 ```cmd
 start ms-cxh:localonly
+```
 
 [← Return to Windows](../)
