@@ -34,7 +34,7 @@ A Windows 11 virtual machine (VM) was required as a controlled environment for f
 
 ### 1. Created and configured the virtual machine
 
-A Windows 11 virtual machine was created in VMware Workstation Pro using the Custom (advanced) configuration option. This allowed manual configuration of the virtual hardware, including memory, CPU cores, disk settings, and network type.
+A Windows 11 VM was created in VMware Workstation Pro using the Custom (advanced) configuration option. This allowed manual configuration of the virtual hardware, including memory, CPU cores, disk settings, and network type.
 
 ![Custom virtual machine configuration](screenshots/01-windows-11-vm-installation.png)
 
