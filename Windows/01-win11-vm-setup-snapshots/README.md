@@ -84,17 +84,17 @@ VMware Tools improve display scaling, mouse movement, clipboard behavior, and ge
 
 To complete the VM setup, a baseline snapshot named  `Fresh Windows 11 install` was created.
 
-This snapshot provides a known working state that can be restored before starting future labs or after making unwanted configuration changes.
+This snapshot provides a known working state that can be restored to before starting future labs or after making unwanted configuration changes.
 
 ![Baseline snapshot created](screenshots/09-snapshot-manager.png)
 
-### 7. Tested snapshot restore
+### 7. Verified snapshot restore
 
-A temporary folder named `DELETE ME` was created inside the VM before restoring the baseline snapshot.
+A temporary folder named `DELETE ME` was created before reverting the VM to the baseline snapshot.
 
 ![Testing snapshot functionality](screenshots/10-snapshot-test.jpg)
 
-The VM was then restored to the baseline snapshot. The `DELETE ME` folder was no longer present, confirming a successful rollback.
+After the revert, the folder was no longer present, confirming a successful rollback.
 
 ![Successful snapshot restoration](screenshots/12-successful-snapshot-restoration.jpg)
 
