@@ -52,7 +52,7 @@ The VM was assigned 16 GB of RAM to ensure smooth Windows 11 performance while l
 
 ![Memory configuration](screenshots/04-memory-configuration.png)
 
-NAT (Network Address Translation) was selected so the virtual machine could access the internet through the host computer without appearing as a separate device on the physical network.
+The VM network type was set to NAT (Network Address Translation). This allows internet access through the host computer without making the VM appear as a separate device on the physical network.
 
 ![NAT network configuration](screenshots/05-network-type-configuration.png)
 
