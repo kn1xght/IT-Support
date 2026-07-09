@@ -42,7 +42,7 @@ The VM was configured with UEFI firmware and Secure Boot enabled to support the 
 
 ![UEFI and Secure Boot configuration](screenshots/02-vm-boot-configuration.png)
 
-In addition to UEFI and Secure Boot, Windows 11 also requires TPM 2.0. TPM (Trusted Platform Module) provides hardware-based security functions, including secure storage for cryptographic keys and support for features such as BitLocker.
+In addition to UEFI and Secure Boot, Windows 11 also requires TPM 2.0 (Trusted Platform Module), which provides hardware-based security functions, including secure storage for cryptographic keys and support for features such as BitLocker.
 
 ![Virtual TPM and encryption configuration](screenshots/03-tpm-configuration.png)
 
@@ -66,17 +66,17 @@ Since the disk was left unallocated, Windows Setup could create the required par
 
 ### 4. Created a local Windows account
 
-During the Windows 11 out-of-box experience, the setup process required a Microsoft account sign-in. Since this VM was intended for lab use, I used Command Prompt to launch the local account setup flow and created a local user account instead.
+To complete the Windows 11 installation, a Microsoft account sign-in was required. Since this VM was intended for lab use, `start ms-cxh:localonly` was run from Command Prompt to open the local account setup flow and create a local user account instead.
 
-This kept the lab system separate from personal cloud services and made the VM easier to reset, snapshot, and reuse.
+This kept the VM separated from personal cloud services and made it easier to reset and reuse.
 
 ![Local account setup command](screenshots/07-local-user-account-configuration.png)
 
 ### 5. Installed VMware Tools
 
-After Windows 11 was installed, I installed VMware Tools inside the guest operating system.
+With Windows 11 now operational, VMware Tools were installed next.
 
-VMware Tools improves display scaling, mouse movement, clipboard behavior, and general integration between the host and guest systems.
+VMware Tools improve display scaling, mouse movement, clipboard behavior, and general integration between the host and guest systems.
 
 ![VMware Tools installation completed](screenshots/08-vmware-tools-installation.png)
 
