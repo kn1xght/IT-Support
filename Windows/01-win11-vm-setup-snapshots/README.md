@@ -100,7 +100,7 @@ After the revert, the folder was no longer present, confirming a successful roll
 
 ## Result
 
-The Windows 11 VM environment was deployed in VMware Workstation Pro. VMware Tools were installed, and the required VM configuration was completed.
+The Windows 11 VM environment was deployed in VMware Workstation Pro. VMware Tools were installed, and the required manual configuration was completed.
 
 With the baseline snapshot created and tested, the environment is now ready for future IT labs.
 
