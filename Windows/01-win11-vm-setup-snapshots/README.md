@@ -48,21 +48,19 @@ In addition to UEFI and Secure Boot, Windows 11 also requires TPM 2.0. TPM (Trus
 
 ### 2. Configured virtual hardware resources
 
-The VM was assigned enough resources to run Windows 11 smoothly while still leaving resources available for the host system.
-
-The system was configured with 16 GB of RAM for better performance during installation and later lab work.
+The VM was assigned 16 GB of RAM to ensure smooth Windows 11 performance while leaving resources available for the host system.
 
 ![Memory configuration](screenshots/04-memory-configuration.png)
 
-NAT networking was selected so the virtual machine could access the internet through the host computer without being directly exposed to the physical network.
+NAT (Network Address Translation) was selected so the virtual machine could access the internet through the host computer without appearing as a separate device on the physical network.
 
 ![NAT network configuration](screenshots/05-network-type-configuration.png)
 
 ### 3. Installed Windows 11
 
-I started the VM and booted from the Windows 11 ISO. During installation, Disk 0 was selected as the installation target.
+Disk 0 was selected as the installation target.
 
-The disk was left as unallocated space so Windows Setup could automatically create the required system, recovery, and primary partitions.
+Since the disk was left unallocated, Windows Setup could create the required partitions automatically.
 
 ![Windows 11 disk selection](screenshots/06-disk-allocation.png)
 
