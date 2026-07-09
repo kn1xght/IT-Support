@@ -82,7 +82,7 @@ VMware Tools improve display scaling, mouse movement, clipboard behavior, and ge
 
 ### 6. Created a baseline snapshot
 
-Once the VM was fully installed and operating correctly, I created a baseline snapshot named `Fresh Windows 11 install`.
+To complete the VM setup, a baseline snapshot named  `Fresh Windows 11 install` was created.
 
 This snapshot provides a known working state that can be restored before starting future labs or after making unwanted configuration changes.
 
@@ -90,19 +90,19 @@ This snapshot provides a known working state that can be restored before startin
 
 ### 7. Tested snapshot restore
 
-To verify the snapshot, I made a temporary change inside the VM by creating a test folder named `DELETE ME`.
+A temporary folder named `DELETE ME` was created inside the VM before restoring the baseline snapshot.
 
 ![Testing snapshot functionality](screenshots/10-snapshot-test.jpg)
 
-I then restored the VM back to the baseline snapshot. After restoration, I confirmed that the "DELETE ME" folder had been removed and that the VM returned to its clean working state.
+The VM was then restored to the baseline snapshot. The `DELETE ME` folder was no longer present, confirming a successful rollback.
 
 ![Successful snapshot restoration](screenshots/12-successful-snapshot-restoration.jpg)
 
 ## Result
 
-The Windows 11 virtual machine was successfully deployed in VMware Workstation Pro and prepared for future IT labs. 
+The Windows 11 VM environment was successfully deployed in VMware Workstation Pro, with VMware Tools installed and the required manual configuration completed.
 
-The VM was configured with Windows 11-compatible firmware, virtual TPM support, NAT networking, VMware Tools, and a clean baseline snapshot. Snapshot functionality was verified by restoring the VM after making a temporary change.
+With the baseline snapshot created and tested, the environment is now ready for future IT labs.
 
 ## Troubleshooting
 
