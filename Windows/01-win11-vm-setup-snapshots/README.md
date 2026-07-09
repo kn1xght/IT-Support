@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A Windows 11 virtual machine was required as a controlled environment for future enterprise IT labs. The goal was to deploy a functional Windows 11 system in VMware Workstation Pro, configure the virtual hardware, create a clean baseline, and verify that snapshots could restore the machine after unwanted configuration changes.
+A Windows 11 virtual machine (VM) was required as a controlled environment for future IT labs. The goal was to install a functional system in VMware Workstation Pro, manually configure the virtual hardware, set up a local account, create a baseline snapshot, and verify that the system could be restored after unwanted configuration changes.
 
 ## Environment
 
@@ -22,8 +22,6 @@ A Windows 11 virtual machine was required as a controlled environment for future
 - **Virtual TPM:** Enabled
 - **Snapshot name:** `Fresh Windows 11 install`
 
-These settings were chosen to provide a stable Windows 11 lab environment while keeping the VM separate, recoverable, and reusable.
-
 ## Skills Demonstrated
 
 - Windows 11 VM setup
@@ -36,15 +34,15 @@ These settings were chosen to provide a stable Windows 11 lab environment while 
 
 ### 1. Created and configured the virtual machine
 
-I created a new Windows 11 virtual machine in VMware Workstation Pro and selected the custom configuration option. This allowed me to manually configure the virtual hardware, firmware, storage, and network settings instead of relying on the default setup.
+A Windows 11 virtual machine was created in VMware Workstation Pro using the Custom (advanced) configuration option. This allowed manual configuration of the virtual hardware, including memory, CPU cores, disk settings, and network type.
 
 ![Custom virtual machine configuration](screenshots/01-windows-11-vm-installation.png)
 
-The VM was configured with UEFI firmware and Secure Boot enabled to meet Windows 11 requirements.
+The VM was configured with UEFI firmware and Secure Boot enabled to support the Windows 11 installation requirements. UEFI is the modern replacement for legacy BIOS and is responsible for initializing the system hardware and starting the boot process. Secure Boot helps ensure that trusted boot components are used during startup.
 
 ![UEFI and Secure Boot configuration](screenshots/02-vm-boot-configuration.png)
 
-Because Windows 11 requires TPM support, I configured virtual machine encryption so VMware could enable a virtual TPM device.
+In addition to UEFI and Secure Boot, Windows 11 also requires TPM 2.0. TPM (Trusted Platform Module) provides hardware-based security functions, including secure storage for cryptographic keys and support for features such as BitLocker.
 
 ![Virtual TPM and encryption configuration](screenshots/03-tpm-configuration.png)
 
@@ -92,7 +90,7 @@ This snapshot provides a known working state that can be restored before startin
 
 ![Baseline snapshot created](screenshots/09-snapshot-manager.png)
 
-### 7. Tested snapshot restoration
+### 7. Tested snapshot restore
 
 To verify the snapshot, I made a temporary change inside the VM by creating a test folder named `DELETE ME`.
 
@@ -104,7 +102,7 @@ I then restored the VM back to the baseline snapshot. After restoration, I confi
 
 ## Result
 
-The Windows 11 virtual machine was successfully deployed in VMware Workstation Pro and prepared for future enterprise IT labs. 
+The Windows 11 virtual machine was successfully deployed in VMware Workstation Pro and prepared for future IT labs. 
 
 The VM was configured with Windows 11-compatible firmware, virtual TPM support, NAT networking, VMware Tools, and a clean baseline snapshot. Snapshot functionality was verified by restoring the VM after making a temporary change.
 
