@@ -5,9 +5,8 @@ administration, installing and uninstalling software, file permissions, Windows 
 | Lab | Description | 
 |---|---|
 | [Windows 11 VM Setup & Snapshots](01-win11-vm-setup-snapshots/) | Built a Windows 11 VM and established/tested a baseline snapshot | 
-| [Local Accounts & File Permissions](02-local-user-account-administration/) | Created and managed local accounts, configured file permissions |
-| [Software Management](03-software-management/) | Installation and uninstallation of applications | 
-| [Windows Updates](04-windows-updates/) | Managed and troubleshot Windows Updates |
-| [System Diagnostics](05-system-diagnostics-toolkit/) | Diagnosed an issue using Event Viewer, Task Manager, Services, and related tools |
+| [Accounts & File Permissions](02-accounts-and-permissions/) | Created and managed local accounts, configured file permissions |
+| [System Maintenance](03-system-maintenance/) | Installation and uninstallation of applications | 
+| [Windows Tools & Diagnostics](05-windows-tools-and-diagnostics/) | Diagnosed an issue using Event Viewer, Task Manager, Services, and related tools |
 
 [← Back to IT-Support](../README.md)
