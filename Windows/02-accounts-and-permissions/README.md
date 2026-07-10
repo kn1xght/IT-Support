@@ -18,6 +18,8 @@ Local user accounts can be administered through several Windows tools, including
 - Local group membership management
 - Password reset 
 - Local user account deletion
+- NTFS permission configuration
+- Permission inheritance management
 
 ## Implementation
 
@@ -29,7 +31,7 @@ The **Local Users and Groups** console was opened by running `lusrmgr.msc`.
 
 ### 2. Created a local user account
 
-A temporary test account named `Marc` was created. The account was configured to require a password change at the next logon. This way we can assure the user will have full autonomy on his log-in credentials without anyone else knowing it.
+A temporary test account named `Marc` was created. The account was configured to require a password change at the next logon, allowing the user to set their own password privately.
 
 ![Created new local user](screenshots/02-create-new-local-user.png)
 
@@ -41,13 +43,13 @@ After creation, the new account appeared in the local users list. To make sure e
 
 ### 4. Added the user to the Administrators group
 
-For demonstration purposes, the test account was added to the local `Administrators` group while retaining its default `Users` group membership. This enabled the ability to perform administrative tasks on this local machine. 
+For demonstration purposes, the test account was added to the local `Administrators` group while retaining its default `Users` group membership. This granted the account rights to perform administrative tasks on the local machine. 
 
 ![Added local user to Administrators group](screenshots/04-local-user-to-administrator.png)
 
 ### 5. Reset the local user password
 
-The password for the test account was reset to simulate a common IT support task.
+The password for the test account was reset to simulate a forgotten-password request, a common IT support scenario.
 
 ![Reset local user password](screenshots/05-local-user-password-reset.png)
 
@@ -91,7 +93,7 @@ The restricted test account was unable to access the folder, confirming that the
 
 After the local account administration and NTFS permission testing was completed, the temporary user account `Marc` and the `Test Folder` directory were deleted. This also removed the test document created inside the folder.
 
-![Verified denied access](screenshots/)
+![Removed temporary user account and test folder](screenshots/12-removed-temporary-account-and-folder.png)
 
 ## Result
 
