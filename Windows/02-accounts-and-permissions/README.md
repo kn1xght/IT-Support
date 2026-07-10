@@ -1,4 +1,4 @@
-# Local User Account Administration
+# Local User Accounts & File Permissions
 
 ## Scenario
 
@@ -21,7 +21,7 @@ Local user accounts can be administered through several Windows tools, including
 
 ## Implementation
 
-### 1. Opened Local Users and Groups
+#### 1. Opened Local Users and Groups
 
 The **Local Users and Groups** console was opened by running `lusrmgr.msc`.
 
