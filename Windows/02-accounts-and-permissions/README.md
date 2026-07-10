@@ -21,7 +21,7 @@ Local user accounts can be administered through several Windows tools, including
 
 ## Implementation
 
-#### 1. Opened Local Users and Groups
+### 1. Opened Local Users and Groups
 
 The **Local Users and Groups** console was opened by running `lusrmgr.msc`.
 
@@ -51,55 +51,55 @@ The password for the test account was reset to simulate a common IT support task
 
 ![Reset local user password](screenshots/05-local-user-password-reset.png)
 
-### 6. Removed the temporary user account
+### 6. Created a test folder
 
-After the account administration tasks were completed, the temporary test account was deleted.
+A folder named `Test Folder` was created on the `C:` drive for NTFS permission testing.
 
-![Deleted temporary local user](screenshots/06-deleted-local-user.png)
+![Created test folder](screenshots/06-test-folder.png)
 
-### 7. Created a test folder
-
-A folder named `Test Folder` was created on the local disk for NTFS permission testing.
-
-![Created test folder](screenshots/07-test-folder.png)
-
-### 8. Created a test document
+### 7. Created a test document
 
 A document named `Test Document` was created inside the folder to verify file access after permissions were changed.
 
-![Created test document](screenshots/08-test-document.png)
+![Created test document](screenshots/07-test-document.png)
 
-### 9. Disabled inherited permissions
+### 8. Disabled inherited permissions
 
 Permission inheritance was disabled so the folder could be configured with explicit NTFS permissions.
 
-![Disabled inherited permissions](screenshots/11-disable-inheritance.png)
+![Disabled inherited permissions](screenshots/08-disable-inheritance.png)
 
-### 10. Configured explicit folder permissions
+### 9. Configured explicit folder permissions
 
 Inherited permission entries were removed, leaving only the intended local account with access to the folder.
 
-![Configured explicit folder permissions](screenshots/12-stanic-account-access-only.png)
+![Configured explicit folder permissions](screenshots/09-stanic-account-access-only.png)
 
-### 11. Verified allowed access
+### 10. Verified allowed access
 
 The allowed account was able to open and edit the test document.
 
-![Verified allowed access](screenshots/13-stanic-access-allowed.png)
+![Verified allowed access](screenshots/10-stanic-access-allowed.png)
 
-### 12. Verified denied access
+### 11. Verified denied access
 
 The restricted test account was unable to access the folder, confirming that the NTFS permissions were applied correctly.
 
-![Verified denied access](screenshots/14-marc-access-denied.png)
+![Verified denied access](screenshots/11-marc-access-denied.png)
 
 ### 12. Removed temporary user account and test folder
 
 After the local account administration and NTFS permission testing was completed, the temporary user account `Marc` and the `Test Folder` directory were deleted. This also removed the test document created inside the folder.
 
+![Verified denied access](screenshots/)
+
 ## Result
 
-The local user account `Marc` was successfully created, assigned local administrator privileges, used for a password reset demonstration, and removed after testing. This demonstrated a basic local user account administration workflow.
+The local user account `Marc` was created, assigned local administrator privileges, and used to demonstrate a password reset workflow. NTFS permissions were then configured on a test folder to control user access. Testing confirmed that `Stanic` could access the folder, including the document inside it, while `Marc` was denied access.
+
+After the workflow was completed, the temporary user account and test folder were deleted.
+
+## Note
 
 Adding a user to the local `Administrators` group grants elevated privileges on the machine. In a real environment, local administrator access should only be granted when required, as unnecessary administrator privileges can create security risks.
 

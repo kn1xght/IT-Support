@@ -66,7 +66,7 @@ Since the disk was left unallocated, Windows Setup could create the required par
 
 ### 4. Created a local Windows account
 
-To complete the Windows 11 installation, a Microsoft account sign-in was required. Since this VM was intended for lab use, `start ms-cxh:localonly` was run from Command Prompt to open the local account setup flow and create a local user account instead.
+To complete the Windows 11 installation, a Microsoft account sign-in was required. Since this VM was intended for lab use, `start ms-cxh:localonly` was run from Command Prompt to open the local account setup flow and create a local user account named `Stanic` instead.
 
 This kept the VM separated from personal cloud services and made it easier to reset and reuse.
 
