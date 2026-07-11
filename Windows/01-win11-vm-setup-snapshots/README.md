@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A Windows 11 virtual machine (VM) was required as a controlled environment for future IT labs. The goal was to install a functional system in VMware Workstation Pro, manually configure the virtual hardware, set up a local account, create a baseline snapshot, and verify that the system could be restored after unwanted configuration changes.
+A Windows 11 virtual machine (VM) was required as a controlled environment for future IT labs. The goal was to install a functional system in VMware Workstation Pro, manually configure the virtual hardware, set up a local account, create a baseline snapshot, and verify that the system could be restored after unwanted changes.
 
 ## Environment
 
@@ -25,7 +25,7 @@ A Windows 11 virtual machine (VM) was required as a controlled environment for f
 
 - Windows 11 VM setup
 - VM hardware configuration
-- Local Windows account setup
+- Local Windows user account setup
 - VMware Tools installation
 - Snapshot management
 

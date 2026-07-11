@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A temporary local user account and a test folder were required to practice user administration and NTFS permission management in Windows 11. The goal was to create a temporary user, modify group membership, perform a password reset, configure NTFS permissions, verify folder access, and remove the temporary resources after testing.
+A temporary local user account and a test folder were required to practice user administration and NTFS permission management. The goal was to create a temporary user, modify group membership, perform a password reset, configure NTFS permissions, verify folder access, and remove the temporary resources after testing.
 
 Local user accounts can be administered through several Windows tools, including **Settings**, **Control Panel**, and **Local Users and Groups**. For this lab, `lusrmgr.msc` was used because it provides a more efficient interface for managing local users and group memberships.
 
@@ -35,19 +35,19 @@ A temporary local user account named `Marc` was created. The account was configu
 
 ### 3. Verified the new user account
 
-The new account appeared in the local users list, verifying that it had been created.
+The `Marc` account appeared in the local users list, verifying that it had been created.
 
 ![Verified new local user properties](screenshots/03-new-local-user-properties.png)
 
 ### 4. Added the user to the Administrators group
 
-The test account was added to the local `Administrators` group while retaining its default `Users` group membership. This granted the account local administrator privileges.
+The `Marc` account was added to the local `Administrators` group while retaining its default `Users` group membership, granting the local user elevated privileges. The account was then removed from `Administrators` group to prevent conflict with the upcoming NTFS permission part of the lab.
 
 ![Added local user to Administrators group](screenshots/04-local-user-to-administrator.png)
 
 ### 5. Reset the local user password
 
-The password for the test account was reset to simulate a forgotten-password request, a common IT support scenario.
+The password for the `Marc` account was reset to simulate a forgotten-password request, a common IT support scenario.
 
 ![Reset local user password](screenshots/05-local-user-password-reset.png)
 
@@ -71,29 +71,29 @@ Inherited permission entries were removed, leaving only the intended local accou
 
 ### 9. Verified allowed access
 
-The allowed account was able to open and edit the test document.
+The `Stanic` account was able to access the `Test Folder`.
 
 ![Verified allowed access](screenshots/09-stanic-access-allowed.png)
 
 ### 10. Verified denied access
 
-The restricted test account was unable to access the folder, confirming that the NTFS permissions were applied correctly.
+The `Marc` account was unable to access `Test Folder`, confirming that the configured NTFS permissions worked as intended.
 
 ![Verified denied access](screenshots/10-marc-access-denied.png)
 
 ### 11. Removed temporary user account and test folder
 
-After the local account administration and NTFS permission testing was completed, the temporary user account `Marc` and the `Test Folder` directory were deleted.
+After the administration and permission tests were completed, the temporary `Marc` account and `Test Folder` were deleted.
 
 ![Removed temporary user account and test folder](screenshots/11-removed-temporary-account-and-folder.png)
 
 ## Result
 
-The local user account `Marc` was created, assigned local administrator privileges, and used to simulate a password reset scenario. NTFS permissions were then configured on a test folder to control user access. Testing confirmed that `Stanic` could access the folder, including the document inside it, while `Marc` was denied access.
+A local user account `Marc` was created, temporarily granted local administrator privileges, and used to simulate a password reset scenario. NTFS permissions were then configured on a test folder to control user access. Testing confirmed that `Stanic` could access the folder, while `Marc` was denied access.
 
-After the workflow was completed, the temporary user account and test folder were deleted.
+After the account and permission configuration, the temporary user account and test folder were deleted.
 
-## Note
+## Security Note
 
 Adding a user to the local `Administrators` group grants elevated privileges on the machine. In a real environment, this should be approached with caution, as unnecessary privileges can create security risks.
 
