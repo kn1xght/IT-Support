@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A temporary local user account and a test folder were required to practice user administration and NTFS permission management. The goal was to create a temporary user, modify group membership, perform a password reset, configure NTFS permissions, verify folder access, and remove the temporary resources after testing.
+A temporary local user account and a test folder were required to practice user administration and NTFS permission management. The goal was to create the user, modify group membership, perform a password reset, configure NTFS permissions, verify folder access, and remove the temporary resources after testing.
 
 ## Environment
 
@@ -81,7 +81,7 @@ By contrast, the `Marc` account was denied access, confirming that the NTFS perm
 
 After the administration and permission tests were completed, the temporary `Marc` account and `Test Folder` were deleted.
 
-![Removed temporary user account and test folder](screenshots/12-removed-temporary-account-and-folder.png)
+![Removed temporary user account and test folder](screenshots/12-remove-temporary-account-and-folder.png)
 
 ## Result
 
