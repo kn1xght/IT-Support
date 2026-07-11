@@ -81,7 +81,7 @@ By contrast, the `Marc` account was denied access, confirming that the NTFS perm
 
 After the administration and permission tests were completed, the temporary `Marc` account and `Test Folder` were deleted.
 
-![Removed temporary user account and test folder](screenshots/12-remove-temporary-account-and-folder.png)
+![Remove temporary user account and test folder](screenshots/12-remove-temporary-account-and-folder.png)
 
 ## Result
 
