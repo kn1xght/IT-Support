@@ -49,7 +49,7 @@ The password for the `Marc` account was reset to simulate a forgotten-password r
 
 Before proceeding, `Marc` was removed from the `Administrators` group so that the elevated privileges would not affect the permission test.
 
-![Reset local user password](screenshots/06-remove-administrator-privileges.png)
+![Remove administrator privileges](screenshots/06-remove-administrator-privileges.png)
 
 ### 5. Created a test folder
 
@@ -63,7 +63,7 @@ Permission inheritance was disabled so the folder could be configured with expli
 
 ![Disabled inherited permissions](screenshots/08-disable-inheritance.png)
 
-After the inherited permission entries were removed, an explicit permission entry was configured for the local account `Stanic`.
+After the inherited permission entries were removed, an explicit permission entry was configured for `Stanic`, the existing local account created during the previous **Windows 11 VM Setup & Snapshots** lab.
 
 ![Configured explicit folder permissions](screenshots/09-stanic-account-access-only.png)
 
