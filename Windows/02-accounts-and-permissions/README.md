@@ -13,7 +13,7 @@ A temporary local user account and a test folder were required to practice user 
 
 - Local user account creation and deletion
 - Group membership management
-- Password reset 
+- Password reset
 - Permission inheritance management
 - NTFS permission configuration
 
@@ -35,13 +35,13 @@ After creation, the `Marc` account appeared in the local users list, verifying t
 
 ![Verified new local user properties](screenshots/03-new-local-user-properties.png)
 
-### 4. Added the user to the Administrators group
+### 3. Added the user to the Administrators group
 
 The `Marc` account was added to the local `Administrators` group while retaining its default `Users` group membership, granting the account elevated privileges.
 
 ![Added local user to Administrators group](screenshots/04-local-user-to-administrator.png)
 
-### 5. Reset the local user password
+### 4. Reset the local user password and removed administrator privileges
 
 The password for the `Marc` account was reset to simulate a forgotten-password request, a common IT support scenario.
 
@@ -49,37 +49,33 @@ The password for the `Marc` account was reset to simulate a forgotten-password r
 
 Before proceeding, `Marc` was removed from the `Administrators` group so that the elevated privileges would not affect the permission test.
 
-### 6. Created a test folder
+### 5. Created a test folder
 
 A folder named `Test Folder` was created on the `C:` drive for NTFS permission testing.
 
 ![Created test folder](screenshots/06-test-folder.png)
 
-### 7. Disabled inherited permissions
+### 6. Disabled inheritance and configured explicit NTFS permissions
 
 Permission inheritance was disabled so the folder could be configured with explicit NTFS permissions.
 
 ![Disabled inherited permissions](screenshots/07-disable-inheritance.png)
 
-### 8. Configured explicit folder permissions
-
-The inherited permission entries were removed, and an explicit permission entry was configured for the local account `Stanic`.
+After the inherited permission entries were removed, an explicit permission entry was configured for the local account `Stanic`.
 
 ![Configured explicit folder permissions](screenshots/08-stanic-account-access-only.png)
 
-### 9. Verified allowed access
+### 7. Verified folder access
 
-The `Stanic` account was then able to access the `Test Folder`.
+The `Stanic` account was able to access the `Test Folder`.
 
 ![Verified allowed access](screenshots/09-stanic-access-allowed.png)
 
-### 10. Verified denied access
-
-The `Marc` account was unable to access `Test Folder`, confirming that the configured NTFS permissions worked as intended.
+By contrast, the `Marc` account was denied access, confirming that the NTFS permissions were applied correctly.
 
 ![Verified denied access](screenshots/10-marc-access-denied.png)
 
-### 11. Removed temporary user account and test folder
+### 8. Removed temporary user account and test folder
 
 After the administration and permission tests were completed, the temporary `Marc` account and `Test Folder` were deleted.
 
@@ -87,7 +83,7 @@ After the administration and permission tests were completed, the temporary `Mar
 
 ## Result
 
-The local user account `Marc` was created, temporarily granted local administrator privileges, and used to simulate a password reset scenario. NTFS permissions were then configured on a test folder to control user access. 
+The local user account `Marc` was created, temporarily granted local administrator privileges, and used to simulate a forgotten-password request. NTFS permissions were then configured on a test folder to control user access.
 
 Testing confirmed that `Stanic` could access the folder while `Marc` was denied access. The temporary account and test folder were deleted after access was verified.
 
