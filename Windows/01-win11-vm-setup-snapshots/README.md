@@ -20,7 +20,6 @@ A Windows 11 virtual machine (VM) was required as a controlled environment for f
 - **Network type:** NAT
 - **Firmware:** UEFI with Secure Boot
 - **Virtual TPM:** Enabled
-- **Snapshot name:** `Fresh Windows 11 install`
 
 ## Skills Demonstrated
 
@@ -82,7 +81,7 @@ VMware Tools improve display scaling, mouse movement, clipboard behavior, and ge
 
 ### 6. Created a baseline snapshot
 
-To complete the VM setup, a baseline snapshot named  `Fresh Windows 11 install` was created.
+To complete the VM setup, a baseline snapshot named `Fresh Windows 11 install` was created.
 
 This snapshot provides a known working state that can be restored to before starting future labs or after making unwanted configuration changes.
 
@@ -96,7 +95,7 @@ A temporary folder named `DELETE ME` was created before reverting the VM to the 
 
 After the revert, the folder was no longer present, confirming a successful rollback.
 
-![Successful snapshot restoration](screenshots/12-successful-snapshot-restoration.jpg)
+![Successful snapshot restoration](screenshots/11-successful-snapshot-restoration.jpg)
 
 ## Result
 
