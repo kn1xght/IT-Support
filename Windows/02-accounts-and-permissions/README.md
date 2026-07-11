@@ -47,7 +47,7 @@ The password for the `Marc` account was reset to simulate a forgotten-password r
 
 ![Reset local user password](screenshots/05-local-user-password-reset.png)
 
-Before proceeding, `Marc` was removed from the `Administrators` group so that the elevated privileges would not affect the permission test.
+Before proceeding, `Marc` was removed from the `Administrators` group so that the elevated privileges would not affect the NTFS permission test.
 
 ![Remove administrator privileges](screenshots/06-remove-administrator-privileges.png)
 
@@ -87,6 +87,6 @@ After the administration and permission tests were completed, the temporary `Mar
 
 The local user account `Marc` was created, temporarily granted local administrator privileges, and used to simulate a forgotten-password request. NTFS permissions were then configured on a test folder to control user access.
 
-Testing confirmed that `Stanic` could access the folder while `Marc` was denied access. The temporary account and test folder were deleted after access was verified.
+Testing confirmed that `Stanic` could access the folder while `Marc` was denied access, after which the temporary user account and test folder were deleted.
 
 [← Return to Windows](../)
