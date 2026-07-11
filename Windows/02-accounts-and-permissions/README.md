@@ -49,37 +49,39 @@ The password for the `Marc` account was reset to simulate a forgotten-password r
 
 Before proceeding, `Marc` was removed from the `Administrators` group so that the elevated privileges would not affect the permission test.
 
+![Reset local user password](screenshots/06-remove-administrator-privileges.png)
+
 ### 5. Created a test folder
 
 A folder named `Test Folder` was created on the `C:` drive for NTFS permission testing.
 
-![Created test folder](screenshots/06-test-folder.png)
+![Created test folder](screenshots/07-create-test-folder.png)
 
 ### 6. Disabled inheritance and configured explicit NTFS permissions
 
 Permission inheritance was disabled so the folder could be configured with explicit NTFS permissions.
 
-![Disabled inherited permissions](screenshots/07-disable-inheritance.png)
+![Disabled inherited permissions](screenshots/08-disable-inheritance.png)
 
 After the inherited permission entries were removed, an explicit permission entry was configured for the local account `Stanic`.
 
-![Configured explicit folder permissions](screenshots/08-stanic-account-access-only.png)
+![Configured explicit folder permissions](screenshots/09-stanic-account-access-only.png)
 
 ### 7. Verified folder access
 
 The `Stanic` account was able to access the `Test Folder`.
 
-![Verified allowed access](screenshots/09-stanic-access-allowed.png)
+![Verified allowed access](screenshots/10-stanic-access-allowed.png)
 
 By contrast, the `Marc` account was denied access, confirming that the NTFS permissions were applied correctly.
 
-![Verified denied access](screenshots/10-marc-access-denied.png)
+![Verified denied access](screenshots/11-marc-access-denied.png)
 
 ### 8. Removed temporary user account and test folder
 
 After the administration and permission tests were completed, the temporary `Marc` account and `Test Folder` were deleted.
 
-![Removed temporary user account and test folder](screenshots/11-removed-temporary-account-and-folder.png)
+![Removed temporary user account and test folder](screenshots/12-removed-temporary-account-and-folder.png)
 
 ## Result
 
