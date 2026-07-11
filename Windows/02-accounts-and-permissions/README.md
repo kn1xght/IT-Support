@@ -49,7 +49,7 @@ The password for the `Marc` account was reset to simulate a forgotten-password r
 
 Before proceeding, `Marc` was removed from the `Administrators` group so that the elevated privileges would not affect the NTFS permission test.
 
-![Remove administrator privileges](screenshots/06-remove-administrator-privileges.png)
+![Removed administrator privileges](screenshots/06-remove-administrator-privileges.png)
 
 ### 5. Created a test folder
 
