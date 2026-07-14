@@ -7,6 +7,7 @@ A Windows 11 virtual machine (VM) was required as a controlled environment for f
 ## Environment
 
 - **Guest operating system:** Windows 11 Enterprise Evaluation
+- **Administrator account:** `Stanic`
 - **Hypervisor:** VMware Workstation Pro 26H1
 - **Installation media:** Windows 11 ISO
 - **Host operating system:** Windows 10
