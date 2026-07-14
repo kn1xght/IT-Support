@@ -7,6 +7,8 @@ A temporary local user account and a test folder were required to practice user 
 ## Environment
 
 - **Operating system:** Windows 11 Enterprise Evaluation
+- **Local user account:** `Marc`
+- **Administrator account:** `Stanic`
 - **Administration tool:** Local Users and Groups (`lusrmgr.msc`)
 
 ## Skills Demonstrated

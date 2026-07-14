@@ -2,12 +2,12 @@
 
 ## Scenario
 
-A Windows 11 environment with a standard local user account was required to practice software management and operating system maintenance. The goal was to install and remove an application, verify administrator authorization through User Account Control (UAC), check the Windows Update status and history, and review advanced update options.
+A local user account with standard privileges was required to practice software management and operating system maintenance. The goal was to install and uninstall an application, check for, install, and uninstall a Windows update, verify the administrator authorization required for those actions through User Account Control (UAC), and review the update history and advanced options.
 
 ## Environment
 
 - **Operating system:** Windows 11 Enterprise Evaluation
-- **Standard user account:** `Alex`
+- **Local user account:** `Alex`
 - **Administrator account:** `Stanic`
 - **Test application:** Google Chrome
 - **Administration tools:** Windows Settings and Control Panel
@@ -15,7 +15,7 @@ A Windows 11 environment with a standard local user account was required to prac
 ## Skills Demonstrated
 
 - Standard user privilege testing
-- Software installation and removal
+- Software installation and uninstallation
 - User Account Control (UAC)
 - Windows Update management
 - Update history review
@@ -71,7 +71,7 @@ The advanced options were reviewed to identify settings for Microsoft product up
 
 ## Result
 
-Google Chrome was installed and removed while signed in to the standard local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both changes could continue, confirming that `Alex` could not perform them with standard privileges alone.
+Google Chrome was installed and removed while signed in to the standard local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both changes could continue, confirming that `Alex` could not perform them with standard privileges.
 
 Windows Update was then checked, and the system reported that it was up to date. The update history and advanced options were also reviewed, completing the software management and update maintenance tasks.
 
