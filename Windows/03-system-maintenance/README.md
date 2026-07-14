@@ -40,21 +40,21 @@ After authorization was provided, Google Chrome was installed and opened to veri
 
 ### 3. Uninstalled and verified the removal of Google Chrome
 
-Google Chrome was selected in **Programs and Features** within Control Panel, and the uninstall process was started.
+Google Chrome was selected in **Programs and Features** within Control Panel to start the uninstallation process.
 
 ![Started Google Chrome uninstallation](screenshots/04-chrome-uninstallation.png)
 
-User Account Control again requested credentials for the `Stanic` administrator account before the application could be removed.
+User Account Control once again requested credentials for the `Stanic` administrator account before the application could be removed.
 
 ![UAC prompt for Google Chrome uninstallation](screenshots/05-chrome-uninstallation-uac.png)
 
-After the process was completed, Google Chrome no longer appeared in the installed programs list, confirming that the application had been removed.
+After the requested credentials were provided, Google Chrome no longer appeared in the installed programs list, confirming that the application had been removed.
 
 ![Verified Google Chrome removal](screenshots/06-chrome-uninstallation-verification.png)
 
 ### 4. Checked for and installed Windows updates
 
-Windows Update was used to check for and install available updates. Unlike the Google Chrome installation and removal, installing updates through Windows Update did not require administrator authorization from the standard account.
+Windows Update was used to check for and install available updates. Unlike the Google Chrome installation and removal, installing updates did not require administrator privileges.
 
 After the updates were installed, Windows reported that the system was up to date.
 
@@ -76,7 +76,7 @@ After the uninstallation was completed, `KB5100998` no longer appeared in the li
 
 ### 6. Reviewed advanced Windows Update options
 
-The advanced options were reviewed to identify settings for Microsoft product updates, restart behavior, metered connections, update notifications, active hours, optional updates, and Delivery Optimization.
+The advanced options were reviewed to familiarize with restart behavior, metered connections, update notifications, active hours, optional updates, and Delivery Optimization.
 
 ![Reviewed advanced Windows Update options](screenshots/11-advanced-options.png)
 
@@ -84,6 +84,6 @@ The advanced options were reviewed to identify settings for Microsoft product up
 
 Google Chrome was installed and removed while signed in to the standard local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both actions could continue.
 
-Available Windows updates were installed without administrator authorization from the standard account, while removing `KB5100998` required elevation through UAC. The update removal was verified, and the update history and advanced options were reviewed.
+Available Windows updates were installed without administrator authorization from the standard account, while removing an update `KB5100998` required elevation through UAC. The update removal was verified, and the update history and advanced options were reviewed.
 
 [← Return to Windows](../)
