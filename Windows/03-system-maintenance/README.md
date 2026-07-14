@@ -26,29 +26,31 @@ A local user account with standard privileges was required to practice software 
 
 A local user account named `Alex` was created with standard privileges. This provided an account for verifying which software and operating system maintenance tasks required administrator authorization.
 
+![Created local user account `Alex`](screenshots/01-alex-account-creation.png)
+
 ### 2. Installed and verified Google Chrome
 
 While signed in to `Alex`, the Google Chrome installer was opened. Since the installation required elevated privileges, User Account Control requested an administrator username and password. Credentials for `Stanic`, the existing administrator account, were used to continue.
 
-![UAC prompt for Google Chrome installation](screenshots/01-chrome-installation-uac.png)
+![UAC prompt for Google Chrome installation](screenshots/02-chrome-installation-uac.png)
 
 After authorization was provided, Google Chrome was installed and opened to verify that the application was operational.
 
-![Verified Google Chrome installation](screenshots/02-chrome-installation-verification.png)
+![Verified Google Chrome installation](screenshots/03-chrome-installation-verification.png)
 
 ### 3. Uninstalled and verified the removal of Google Chrome
 
 Google Chrome was selected in **Programs and Features** within Control Panel, and the uninstall process was started.
 
-![Started Google Chrome uninstallation](screenshots/03-chrome-uninstallation.png)
+![Started Google Chrome uninstallation](screenshots/04-chrome-uninstallation.png)
 
 User Account Control again requested credentials for the `Stanic` administrator account before the application could be removed.
 
-![UAC prompt for Google Chrome uninstallation](screenshots/04-chrome-uninstallation-uac.png)
+![UAC prompt for Google Chrome uninstallation](screenshots/05-chrome-uninstallation-uac.png)
 
 After the process was completed, Google Chrome no longer appeared in the installed programs list, confirming that the application had been removed.
 
-![Verified Google Chrome removal](screenshots/05-chrome-uninstallation-verification.png)
+![Verified Google Chrome removal](screenshots/06-chrome-uninstallation-verification.png)
 
 ### 4. Checked for and installed Windows updates
 
@@ -56,27 +58,27 @@ Windows Update was used to check for and install available updates. Unlike the G
 
 After the updates were installed, Windows reported that the system was up to date.
 
-![Verified Windows Update status](screenshots/06-windows-updates.png)
+![Verified Windows Update status](screenshots/07-windows-updates.png)
 
 ### 5. Uninstalled and verified the removal of a Windows update
 
 The update history was reviewed to identify an installed update that could be removed. While signed in to `Alex`, update `KB5100998` was selected for uninstallation.
 
-![Selected an installed Windows update for removal](screenshots/07-update-uninstallation.png)
+![Selected an installed Windows update for removal](screenshots/08-update-uninstallation.png)
 
 Because removing the update required elevated privileges, User Account Control requested credentials for the `Stanic` administrator account before the process could continue.
 
-![UAC prompt for Windows update removal](screenshots/08-update-uninstallation-uac.png)
+![UAC prompt for Windows update removal](screenshots/09-update-uninstallation-uac.png)
 
 After the uninstallation was completed, `KB5100998` no longer appeared in the list of uninstallable updates, confirming that it had been removed.
 
-![Verified Windows update removal](screenshots/09-update-uninstallation-verification.png)
+![Verified Windows update removal](screenshots/10-update-uninstallation-verification.png)
 
 ### 6. Reviewed advanced Windows Update options
 
 The advanced options were reviewed to identify settings for Microsoft product updates, restart behavior, metered connections, update notifications, active hours, optional updates, and Delivery Optimization.
 
-![Reviewed advanced Windows Update options](screenshots/10-advanced-options.png)
+![Reviewed advanced Windows Update options](screenshots/11-advanced-options.png)
 
 ## Result
 
