@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A local user account with standard privileges was required to practice software management and operating system maintenance. The goal was to install and uninstall an application, check for, install, and uninstall a Windows update, verify the administrator authorization required for those actions through User Account Control (UAC), and review the update history and advanced options.
+A local user account with standard privileges was required to practice software management and operating system maintenance. The goal was to install and uninstall an application, check for, install, and uninstall a Windows update, verify when administrator authorization was required through User Account Control (UAC), and review the update history and advanced options.
 
 ## Environment
 
@@ -18,20 +18,19 @@ A local user account with standard privileges was required to practice software 
 - Software installation and uninstallation
 - User Account Control (UAC)
 - Windows Update management
-- Update history review
-- Advanced update option review
+- Update history and advanced options review
 
 ## Implementation
 
-### 1. Created a standard local user account
+### 1. Created a local user account with standard privileges
 
-A local user account named `Alex` was created with standard access. This provided a non-administrative environment for verifying how Windows handles software changes that require elevated privileges.
+A local user account named `Alex` was created with standard privileges. This provided an account for verifying which software and operating system maintenance tasks required administrator authorization.
 
 ### 2. Installed and verified Google Chrome
 
-While signed in as `Alex`, the Google Chrome installer was opened. Because `Alex` did not have administrator privileges, User Account Control required credentials for `Stanic`, the existing administrator account, before the installation could continue.
+While signed in to `Alex`, the Google Chrome installer was opened. Since the installation required elevated privileges, User Account Control requested an administrator username and password. Credentials for `Stanic`, the existing administrator account, were used to continue.
 
-![Entered administrator credentials for Chrome installation](screenshots/01-chrome-installation-uac.png)
+![UAC prompt for Google Chrome installation](screenshots/01-chrome-installation-uac.png)
 
 After authorization was provided, Google Chrome was installed and opened to verify that the application was operational.
 
@@ -43,36 +42,46 @@ Google Chrome was selected in **Programs and Features** within Control Panel, an
 
 ![Started Google Chrome uninstallation](screenshots/03-chrome-uninstallation.png)
 
-Because removing the application required elevated privileges, User Account Control again requested credentials for the `Stanic` administrator account.
+User Account Control again requested credentials for the `Stanic` administrator account before the application could be removed.
 
-![Entered administrator credentials for Chrome uninstallation](screenshots/04-chrome-uninstallation-uac.png)
+![UAC prompt for Google Chrome uninstallation](screenshots/04-chrome-uninstallation-uac.png)
 
 After the process was completed, Google Chrome no longer appeared in the installed programs list, confirming that the application had been removed.
 
 ![Verified Google Chrome removal](screenshots/05-chrome-uninstallation-verification.png)
 
-### 4. Checked for Windows updates
+### 4. Checked for and installed Windows updates
 
-Windows Update was opened while signed in to the `Stanic` administrator account. After checking for available updates, Windows reported that the system was up to date.
+Windows Update was used to check for and install available updates. Unlike the Google Chrome installation and removal, installing updates through Windows Update did not require administrator authorization from the standard account.
+
+After the updates were installed, Windows reported that the system was up to date.
 
 ![Verified Windows Update status](screenshots/06-windows-updates.png)
 
-### 5. Reviewed the update history
+### 5. Uninstalled and verified the removal of a Windows update
 
-The update history was reviewed to verify that recent quality updates had been installed. The history included security, .NET Framework, driver, definition, and other updates.
+The update history was reviewed to identify an installed update that could be removed. While signed in to `Alex`, update `KB5100998` was selected for uninstallation.
 
-![Reviewed Windows Update history](screenshots/07-update-history.png)
+![Selected an installed Windows update for removal](screenshots/07-update-uninstallation.png)
 
-### 6. Reviewed advanced update options
+Because removing the update required elevated privileges, User Account Control requested credentials for the `Stanic` administrator account before the process could continue.
+
+![UAC prompt for Windows update removal](screenshots/08-update-uninstallation-uac.png)
+
+After the uninstallation was completed, `KB5100998` no longer appeared in the list of uninstallable updates, confirming that it had been removed.
+
+![Verified Windows update removal](screenshots/09-update-uninstallation-verification.png)
+
+### 6. Reviewed advanced Windows Update options
 
 The advanced options were reviewed to identify settings for Microsoft product updates, restart behavior, metered connections, update notifications, active hours, optional updates, and Delivery Optimization.
 
-![Reviewed advanced Windows Update options](screenshots/08-advanced-options.png)
+![Reviewed advanced Windows Update options](screenshots/10-advanced-options.png)
 
 ## Result
 
-Google Chrome was installed and removed while signed in to the standard local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both changes could continue, confirming that `Alex` could not perform them with standard privileges.
+Google Chrome was installed and removed while signed in to the standard local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both actions could continue.
 
-Windows Update was then checked, and the system reported that it was up to date. The update history and advanced options were also reviewed, completing the software management and update maintenance tasks.
+Available Windows updates were installed without administrator authorization from the standard account, while removing `KB5100998` required elevation through UAC. The update removal was verified, and the update history and advanced options were reviewed.
 
 [← Return to Windows](../)
