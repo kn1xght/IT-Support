@@ -23,13 +23,15 @@ Hands-on labs built to simulate enterprise IT environments using Windows and Lin
 | Project | Status |
 |----------|--------|
 | Windows | 🟢 Complete |
-| Linux | 🟡 In Progress |
 | Windows Server | 🟡 In Progress |
 | Active Directory | 🟡 In Progress |
+| Microsoft 365 | ⚪ Planned |
 | Entra ID | ⚪ Planned |
+| Intune | ⚪ Planned |
 | ServiceNow| ⚪ Planned |
-| Jira | ⚪ Planned |
 | Confluence | ⚪ Planned |
+| Jira | ⚪ Planned |
+
 
 ## 🎯 Goals
 
