@@ -10,7 +10,7 @@ Hands-on labs built to simulate enterprise IT environments using Windows and Lin
 | [Linux](Linux/README.md) | Ubuntu VM, terminal, users and sudo, file permissions, Bash scripting, package management |
 | [Windows Server](Windows-Server/README.md) | Server 2022 VM, server roles, DHCP, DNS, file services |
 | [Active Directory](Active-Directory/README.md) | Domain controller setup, users and groups, OUs, GPOs, password resets, PowerShell |
-| [Microsoft 365](Active-Directory/README.md) | Domain controller setup, users and groups, OUs, GPOs, password resets, PowerShell |
+| [Microsoft 365](Microsoft-365/README.md) | User and license management, groups, administrative roles, Exchange Online, shared mailboxes |
 | [Entra ID](Entra-ID/README.md) | Cloud identity configuration, user management, MFA, Conditional Access |
 | [Microsoft Intune](Microsoft-Intune/README.md) | Windows device enrollment, configuration profiles, compliance policies, app deployment |
 | [ServiceNow](ServiceNow/README.md) | Incident management, service requests, ITIL-based ticket workflows |
