@@ -9,7 +9,6 @@ A local user account with standard privileges was required to practice software 
 - **Operating system:** Windows 11 Enterprise Evaluation
 - **Local user account:** `Alex`
 - **Administrator account:** `Stanic`
-- **Test application:** Google Chrome
 - **Administration tools:** Windows Settings and Control Panel
 
 ## Skills Demonstrated
@@ -84,5 +83,8 @@ The **Advanced options** page was reviewed to become familiar with settings for 
 
 Google Chrome was installed and removed while signed in to the local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both actions could continue.
 
-Windows update KB5100998 was downloaded and installed while signed in to `Alex` without administrator authorization. Removing the same update required administrator authorization through UAC, and its removal was verified. 
+Windows update `KB5100998` was downloaded and installed while signed in to `Alex` without administrator authorization. Removing the same update required administrator authorization through UAC, and its removal was verified. 
+
+The Advanced options page was then reviewed to gain familiarity with restart behavior, metered connections, update notifications, active hours, optional updates, and Delivery Optimization.
+
 [← Return to Windows](../)
