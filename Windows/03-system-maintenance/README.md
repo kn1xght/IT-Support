@@ -24,9 +24,9 @@ A local user account with standard privileges was required to practice software 
 
 ### 1. Created a local user account with standard privileges
 
-A local user account named `Alex` was created with standard privileges. This provided an account for verifying which software and operating system maintenance tasks required administrator authorization.
+A local user account named `Alex` was created with standard privileges. This provided a way to verify which tasks required administrator authorization.
 
-![Created local user account `Alex`](screenshots/01-alex-account-creation.png)
+![Created local user account Alex](screenshots/01-alex-account-creation.png)
 
 ### 2. Installed and verified Google Chrome
 
@@ -48,21 +48,21 @@ User Account Control once again requested credentials for the `Stanic` administr
 
 ![UAC prompt for Google Chrome uninstallation](screenshots/05-chrome-uninstallation-uac.png)
 
-After the requested credentials were provided, Google Chrome no longer appeared in the installed programs list, confirming that the application had been removed.
+After administrator credentials were provided and the uninstallation was completed, Google Chrome no longer appeared in the installed programs list, confirming that the application had been removed.
 
 ![Verified Google Chrome removal](screenshots/06-chrome-uninstallation-verification.png)
 
-### 4. Checked for and installed Windows updates
+### 4. Checked for and installed a Windows update
 
-Windows Update was used to check for and install available updates. Unlike the Google Chrome installation and removal, installing updates did not require administrator privileges.
+While signed in to `Alex`, Windows Update was checked for available updates. A .NET Framework security update, `KB5100998`, was found, downloaded, and installed without requesting administrator authorization.
 
-After the updates were installed, Windows reported that the system was up to date.
-
-![Verified Windows Update status](screenshots/07-windows-updates.png)
+![Windows update download](screenshots/07-windows-update.png)
 
 ### 5. Uninstalled and verified the removal of a Windows update
 
-The update history was reviewed to identify an installed update that could be removed. While signed in to `Alex`, update `KB5100998` was selected for uninstallation.
+After the update was installed, `KB5100998` appeared in the list of uninstallable updates and was selected for uninstallation.
+
+Windows updates are commonly identified by a Knowledge Base (KB) number. This identifier can be searched online to locate the corresponding Microsoft documentation and review details about the update, including fixes, security changes, and known issues.
 
 ![Selected an installed Windows update for removal](screenshots/08-update-uninstallation.png)
 
@@ -76,14 +76,13 @@ After the uninstallation was completed, `KB5100998` no longer appeared in the li
 
 ### 6. Reviewed advanced Windows Update options
 
-The advanced options were reviewed to familiarize with restart behavior, metered connections, update notifications, active hours, optional updates, and Delivery Optimization.
+The **Advanced options** page was reviewed to become familiar with settings for restart behavior, metered connections, notifications, active hours, optional updates, and Delivery Optimization.
 
 ![Reviewed advanced Windows Update options](screenshots/11-advanced-options.png)
 
 ## Result
 
-Google Chrome was installed and removed while signed in to the standard local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both actions could continue.
+Google Chrome was installed and removed while signed in to the local account `Alex`. User Account Control required credentials for the `Stanic` administrator account before both actions could continue.
 
-Available Windows updates were installed without administrator authorization from the standard account, while removing an update `KB5100998` required elevation through UAC. The update removal was verified, and the update history and advanced options were reviewed.
-
+Windows update KB5100998 was downloaded and installed while signed in to `Alex` without administrator authorization. Removing the same update required administrator authorization through UAC, and its removal was verified. 
 [← Return to Windows](../)
