@@ -8,12 +8,11 @@ A Windows 11 virtual machine was required to practice process monitoring and Win
 
 - **Operating system:** Windows 11 Enterprise Evaluation
 - **Local administrator account:** `Stanic`
-- **Test process:** Windows PowerShell
-- **Test service:** Print Spooler (`Spooler`)
 - **Administration tools:** Task Manager, Services, Command Prompt, and Event Viewer
 
 ## Skills Demonstrated
 
+- Powershell command
 - Process monitoring and termination
 - CPU usage monitoring
 - Windows service management
@@ -24,7 +23,7 @@ A Windows 11 virtual machine was required to practice process monitoring and Win
 
 ### 1. Generated high CPU usage
 
-The following PowerShell command was run from Command Prompt to create temporary CPU activity:
+The following PowerShell command was run from Command Prompt to create temporary high CPU activity:
 
 ```cmd
 powershell -NoProfile -Command "while ($true) {}"
@@ -36,25 +35,25 @@ Task Manager showed that CPU usage increased from the `0–3%` idle baseline to 
 
 ### 2. Identified the high-CPU process
 
-The Processes tab in Task Manager was sorted by CPU usage. Windows PowerShell appeared at the top of the list, identifying it as the process responsible for the increase.
+With the PowerShell command still running, the Processes tab in Task Manager was sorted by CPU usage. Windows PowerShell appeared at the top of the list, identifying it as the process responsible for the increase.
 
 ![Identified high-CPU process](screenshots/02-high-cpu-process.png)
 
 ### 3. Ended the process and verified CPU recovery
 
-The Windows PowerShell process was ended through Task Manager. CPU usage dropped to `1%`, confirming that the process had caused the increase.
+The Windows PowerShell process was ended through Task Manager. CPU usage dropped to `1%`, confirming return to normal operation. 
 
 ![Verified CPU usage recovery](screenshots/03-cpu-usage-restored.png)
 
 ### 4. Reviewed the Print Spooler configuration
 
-Before the service test, the Print Spooler properties were reviewed. The service was running, and its startup type was set to `Automatic`.
+The second part of the lab focused on Windows service troubleshooting. The Print Spooler properties were reviewed before making any changes. The service was running, and its startup type was set to `Automatic`.
 
 ![Reviewed Print Spooler configuration](screenshots/04-print-spooler-baseline.png)
 
 ### 5. Stopped and disabled the Print Spooler service
 
-The Print Spooler service was stopped, and its startup type was changed from `Automatic` to `Disabled`. This prevented the service from being started.
+The Print Spooler service was stopped, and its startup type was changed from `Automatic` to `Disabled`.
 
 ![Stopped and disabled Print Spooler](screenshots/05-print-spooler-disabled.png)
 
@@ -90,14 +89,14 @@ The startup type was returned to `Automatic`, and the Print Spooler service was 
 
 ### 9. Verified the service configuration
 
-The following commands were run to verify the service status and startup configuration:
+As a final check, the following commands were run:
 
 ```cmd
 sc query spooler
 sc qc spooler
 ```
 
-The output confirmed that the service was running and configured to start automatically.
+The output confirmed that the service was once again running and configured to start automatically.
 
 ![Verified Print Spooler configuration](screenshots/09-service-recovery-verification.png)
 
