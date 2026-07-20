@@ -75,7 +75,7 @@ Windows returned error `1058` because the service was disabled.
 
 ### 7. Reviewed the related event
 
-The System log in Event Viewer was filtered for Service Control Manager events. Event ID `7040` showed that the Print Spooler startup type had changed from automatic to disabled.
+The System log in Event Viewer was filtered for Service Control Manager events. Event ID `7040` showed that the Print Spooler startup type had changed from `Automatic` to `Disabled`.
 
 ![Reviewed Service Control Manager event](screenshots/07-service-control-manager-events.png)
 
