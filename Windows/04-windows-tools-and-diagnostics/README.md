@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A Windows 11 virtual machine was required to practice process monitoring and Windows service troubleshooting. The goal was to create temporary high CPU usage, identify and end the responsible process, stop and disable a Windows service, investigate the issue through Command Prompt and Event Viewer, restore the service, and verify normal operation.
+A Windows 11 VM was used to practice process monitoring and service troubleshooting by simulating high CPU usage and a disabled Print Spooler service. The goal was to create temporary high CPU usage, identify and end the responsible process, stop and disable a Windows service, investigate the issue through Command Prompt and Event Viewer, restore the service, and verify normal operation.
 
 ## Environment
 
@@ -12,11 +12,9 @@ A Windows 11 virtual machine was required to practice process monitoring and Win
 
 ## Skills Demonstrated
 
-- Powershell command execution
-- Process monitoring and termination
-- CPU usage monitoring
+- PowerShell and Command Prompt usage
+- Task Manager performance monitoring and process termination
 - Windows service management
-- Command-line service verification
 - Windows event log filtering
 
 ## Implementation
