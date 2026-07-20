@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A Windows 11 VM was used to practice process monitoring and service troubleshooting by simulating high CPU usage and a Windows service failure. The goal was to create temporary high CPU usage, identify and end the responsible process, stop and disable the Print Spooler service, investigate the failure through Command Prompt and Event Viewer, restore the service, and verify normal operation.
+A Windows 11 VM was used to practice process monitoring and service troubleshooting by simulating high CPU usage and a Windows service failure. The goal was to create a temporary increase in CPU usage, identify and end the responsible process, stop and disable the Print Spooler service, investigate the failure through Command Prompt and Event Viewer, restore the service, and verify normal operation.
 
 ## Environment
 
