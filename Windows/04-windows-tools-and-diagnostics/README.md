@@ -12,7 +12,7 @@ A Windows 11 virtual machine was required to practice process monitoring and Win
 
 ## Skills Demonstrated
 
-- Powershell command
+- Powershell command execution
 - Process monitoring and termination
 - CPU usage monitoring
 - Windows service management
@@ -41,7 +41,7 @@ With the PowerShell command still running, the Processes tab in Task Manager was
 
 ### 3. Ended the process and verified CPU recovery
 
-The Windows PowerShell process was ended through Task Manager. CPU usage dropped to `1%`, confirming return to normal operation. 
+The Windows PowerShell process was ended through Task Manager. CPU usage dropped to `1%`, confirming that it had returned to the normal idle range.
 
 ![Verified CPU usage recovery](screenshots/03-cpu-usage-restored.png)
 
@@ -59,7 +59,7 @@ The Print Spooler service was stopped, and its startup type was changed from `Au
 
 ### 6. Verified the service failure through Command Prompt
 
-Command Prompt was opened as administrator, and the following command was run to check the service:
+Command Prompt was opened as an administrator, and the following command was run to check the service:
 
 ```cmd
 sc query spooler
@@ -96,7 +96,7 @@ sc query spooler
 sc qc spooler
 ```
 
-The output confirmed that the service was once again running and configured to start automatically.
+The output confirmed that the service was running and configured to start automatically.
 
 ![Verified Print Spooler configuration](screenshots/09-service-recovery-verification.png)
 
@@ -104,6 +104,6 @@ The output confirmed that the service was once again running and configured to s
 
 The high CPU usage was traced to the Windows PowerShell process through Task Manager. Ending the process reduced CPU usage from approximately `29%` to `1%`.
 
-The Print Spooler service issue was investigated through Services, Command Prompt, and Event Viewer. The service was returned to its original automatic startup configuration and running state.
+The Print Spooler was stopped and disabled, and the service failure was investigated through Services, Command Prompt, and Event Viewer. The service was then restored to its original Automatic startup type, and Command Prompt verification confirmed that it was running again.
 
 [← Return to Windows](../)
