@@ -12,10 +12,10 @@ A Windows 11 VM was used to practice process monitoring and service troubleshoot
 
 ## Skills Demonstrated
 
-- PowerShell and Command Prompt usage
-- Task Manager performance monitoring and process termination
-- Windows service management
-- Windows event log filtering
+- Task Manager CPU monitoring and process termination
+- Windows service configuration and troubleshooting
+- Command-line service verification
+- Windows event log filtering and analysis
 
 ## Implementation
 
