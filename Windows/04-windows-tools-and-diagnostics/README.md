@@ -2,7 +2,7 @@
 
 ## Scenario
 
-A Windows 11 VM was used to practice process monitoring and service troubleshooting by simulating high CPU usage and a disabled Print Spooler service. The goal was to create temporary high CPU usage, identify and end the responsible process, stop and disable a Windows service, investigate the issue through Command Prompt and Event Viewer, restore the service, and verify normal operation.
+A Windows 11 VM was used to practice process monitoring and service troubleshooting by simulating high CPU usage and a Windows service failure. The goal was to create temporary high CPU usage, identify and end the responsible process, stop and disable the Print Spooler service, investigate the failure through Command Prompt and Event Viewer, restore the service, and verify normal operation.
 
 ## Environment
 
@@ -81,7 +81,7 @@ The System log in Event Viewer was filtered for Service Control Manager events. 
 
 ### 8. Restored the Print Spooler service
 
-The startup type was returned to `Automatic`, and the Print Spooler service was started.
+The Print Spooler startup type was changed back to `Automatic`, and the service was started.
 
 ![Restored Print Spooler service](screenshots/08-print-spooler-restored.png)
 
@@ -102,6 +102,6 @@ The output confirmed that the service was running and configured to start automa
 
 The high CPU usage was traced to the Windows PowerShell process through Task Manager. Ending the process reduced CPU usage from approximately `29%` to `1%`.
 
-The Print Spooler was stopped and disabled, and the service failure was investigated through Services, Command Prompt, and Event Viewer. The service was then restored to its original Automatic startup type, and Command Prompt verification confirmed that it was running again.
+The Print Spooler was stopped and disabled, and the startup failure was investigated through Services, Command Prompt, and Event Viewer. The service was then restored to its original `Automatic` startup type, and its running state was verified through Command Prompt.
 
 [← Return to Windows](../)
