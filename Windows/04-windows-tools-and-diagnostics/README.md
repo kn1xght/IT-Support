@@ -21,7 +21,7 @@ A Windows 11 VM was used to practice process monitoring and service troubleshoot
 
 ### 1. Generated high CPU usage
 
-The following PowerShell command was run from Command Prompt to create temporary high CPU activity:
+The following PowerShell command was run from Command Prompt to create a temporary increase in CPU usage:
 
 ```cmd
 powershell -NoProfile -Command "while ($true) {}"
@@ -100,7 +100,7 @@ The output confirmed that the service was running and configured to start automa
 
 ## Result
 
-The high CPU usage was traced to the Windows PowerShell process through Task Manager. Ending the process reduced CPU usage from approximately `29%` to `1%`.
+The increased CPU usage was traced to the Windows PowerShell process through Task Manager. Ending the process reduced CPU usage from approximately `29%` to `1%`.
 
 The Print Spooler was stopped and disabled, and the startup failure was investigated through Services, Command Prompt, and Event Viewer. The service was then restored to its original `Automatic` startup type, and its running state was verified through Command Prompt.
 
