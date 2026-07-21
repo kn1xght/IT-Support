@@ -9,4 +9,4 @@ administration, installing and uninstalling software, file permissions, Windows 
 | [System Maintenance](03-system-maintenance/) | Installation and uninstallation of applications | 
 | [Windows Tools & Diagnostics](04-windows-tools-and-diagnostics/) | Diagnosed an issue using Event Viewer, Task Manager, Services, and related tools |
 
-[← Back to IT-Support](../README.md)g
+[← Back to IT-Support](../README.md)
