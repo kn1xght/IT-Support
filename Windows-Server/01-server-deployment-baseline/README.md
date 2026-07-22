@@ -45,7 +45,7 @@ Created a custom VMware virtual machine for Windows Server 2025 using UEFI firmw
 
 The installation ISO was attached to the virtual CD/DVD drive after the VM hardware had been configured.
 
-![Windows Server virtual machine hardware configuration](images/01-vm-hardware-configuration.png)
+![Windows Server virtual machine hardware configuration](screenshots/01-vm-hardware-configuration.png)
 
 ### 2. Installed Windows Server 2025
 
@@ -53,7 +53,7 @@ Installed **Windows Server 2025 Standard Evaluation (Desktop Experience)** on th
 
 The Desktop Experience edition provided the graphical interface and Server Manager required for the planned administration labs. After installation, the Windows version and initial Local Server configuration were verified.
 
-![Windows Server 2025 installation verification](images/02-windows-server-installation.png)
+![Windows Server 2025 installation verification](screenshots/02-windows-server-installation.png)
 
 ### 3. Configured the lab network
 
@@ -61,7 +61,7 @@ Configured `VMnet8` as the NAT network for the Windows Server and Active Directo
 
 The subnet was changed to `192.168.50.0/24`, while the VMware NAT service was retained to provide internet access through the host computer. VMware DHCP was disabled because Windows Server will later take responsibility for assigning network settings during the DHCP lab.
 
-![VMware lab network configuration](images/03-dedicated-lab-network.png)
+![VMware lab network configuration](screenshots/03-dedicated-lab-network.png)
 
 This configuration separates the two network functions:
 
@@ -99,7 +99,7 @@ Get-TimeZone
 Get-NetIPConfiguration -InterfaceAlias "Ethernet0"
 ```
 
-![Server baseline configuration](images/04-server-baseline-configuration.png)
+![Server baseline configuration](screenshots/04-server-baseline-configuration.png)
 
 Outbound HTTPS connectivity was tested with:
 
@@ -109,13 +109,13 @@ Test-NetConnection www.microsoft.com -Port 443
 
 The result returned `TcpTestSucceeded : True`, confirming that name resolution, routing, and outbound TCP connectivity were working.
 
-![Network connectivity verification](images/05-network-connectivity-verification.png)
+![Network connectivity verification](screenshots/05-network-connectivity-verification.png)
 
 ### 5. Installed Windows updates
 
 Checked for and installed the available Windows Server security and cumulative updates. The server was restarted where required and checked again until Windows Update reported that the system was up to date.
 
-![Windows Update verification](images/06-windows-update-verification.png)
+![Windows Update verification](screenshots/06-windows-update-verification.png)
 
 ### 6. Enabled and verified Remote Desktop
 
@@ -135,7 +135,7 @@ query session
 
 The current `rdp-tcp` session was listed as active for the local `Administrator` account, confirming that the server could be administered remotely.
 
-![Remote Desktop verification](images/07-remote-desktop-verification.png)
+![Remote Desktop verification](screenshots/07-remote-desktop-verification.png)
 
 ### 7. Created the baseline snapshot
 
@@ -157,7 +157,7 @@ Created before AD DS installation.
 
 This provides a clean rollback point before installing Active Directory Domain Services and promoting the server to a domain controller.
 
-![Pre-AD DS baseline snapshot](images/08-baseline-snapshot.png)
+![Pre-AD DS baseline snapshot](screenshots/08-baseline-snapshot.png)
 
 ## Result
 
