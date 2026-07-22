@@ -7,7 +7,6 @@ Hands-on labs built to simulate enterprise IT environments using a Windows 11 vi
 | Project | Description |
 |:--|:--|
 | [Windows](Windows/README.md) | Windows 11 VM, user accounts, snapshots, file permissions, Event Viewer, system tools |
-| [Windows Server](Windows-Server/README.md) | Server 2022 VM, server roles, DHCP, DNS, file services |
 | [Active Directory](Active-Directory/README.md) | Domain controller setup, users and groups, OUs, GPOs, password resets, PowerShell |
 | [Microsoft 365](Microsoft-365/README.md) | User and license management, groups, admin roles, Exchange Online, shared mailboxes |
 | [Entra ID](Entra-ID/README.md) | Cloud identity configuration, user management, MFA, Conditional Access |
@@ -23,7 +22,6 @@ Hands-on labs built to simulate enterprise IT environments using a Windows 11 vi
 | Project | Status |
 |----------|--------|
 | Windows | 🟢 Complete |
-| Windows Server | 🟡 In Progress |
 | Active Directory | 🟡 In Progress |
 | Microsoft 365 | ⚪ Planned |
 | Entra ID | ⚪ Planned |
