@@ -1,6 +1,6 @@
 # Windows Server & Active Directory Labs
 
-Hands-on labs covering the deployment and administration of a Windows Server 2025 domain environment. The lab begins with windows server configuration and progresses through Active Directory Domain Services, DNS, identity and computer management, DHCP, Group Policy, and domain-based file services.
+Hands-on labs covering the deployment and administration of a Windows Server 2025 domain environment. The labs begin with Windows Server deployment and baseline configuration, then progress through Active Directory Domain Services, DNS, user and computer management, DHCP, Group Policy, and domain-based file services.
 
 | Lab | Description | 
 |---|---|
